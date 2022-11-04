@@ -21,7 +21,7 @@ public class FirstControler {
         return "33333";
     }
 
-    @GetMapping("/users4")
+    @GetMapping("/users4")  //http://localhost:8080/First/users4?name=vvv  //http://localhost:8080/First/users4/?name=vvv
     public String fun4(@RequestParam(value="name",defaultValue = "nn") String name) {
         return "44444" + name;
     }
@@ -30,8 +30,6 @@ public class FirstControler {
     public Person fun5() { return new Person(1,"pp"); }
 
     @PostMapping(value = "/users6")
-    public String fun6(){
-        return "66666";
-    }
+    public String fun6() { return "66666"; }
 
 }
