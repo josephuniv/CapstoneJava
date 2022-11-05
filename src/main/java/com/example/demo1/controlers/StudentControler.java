@@ -17,7 +17,8 @@ public class StudentControler {
 
     @Autowired
     public StudentControler(StudentService StudentService) {
-        this.studentService = new StudentService();
+        //this.studentService = new StudentService();
+        this.studentService = StudentService;
     }
 
     @GetMapping   // Return List of objects

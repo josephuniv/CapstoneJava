@@ -8,7 +8,6 @@ import java.util.List;
 @Service   //@Component
 public class StudentService {
     public List<Student> getStudents() {
-        return List.of(new Student(1,"sssss"));
-
+        return List.of(new Student(1,"ssss"));
     }
 }
