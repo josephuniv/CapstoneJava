@@ -12,5 +12,7 @@ import java.util.List;
 public class PersonControler {
 
     @GetMapping   // Return List of objects
-    public List<Person> getPerson() { return List.of(new Person(1,"pppp")); }
+    public List<Person> getPersons() {
+        return List.of(new Person(1,"pppp"));
+    }
 }
